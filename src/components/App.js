@@ -84,9 +84,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header text="HOOKED" />
+      <Header text="电影" />
       <Search search={search} />
-      <p className="App-intro">Sharing a few of our favourite movies</p>
+      <p className="App-intro">基于React及Hook实现🦍🦍</p>
       <div className="movies">
         {loading && !errorMessage ? (
           <span>loading... </span>

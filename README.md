@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 基于React的电影搜索Demo
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+ `node6+` `react` 
 
-### `yarn start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+开始学习react
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+只是用来熟悉react和react的钩子🐵方面相关知识
 
-### `yarn test`
+稍微运用一下相关知识，接口使用
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[OMDP API ]: https://www.omdbapi.com/
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 实现效果
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![](https://i.loli.net/2019/11/29/zEPwByMFrKfkAm3.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+## 运行本项目
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 所需的玩意
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node (≥ 6)
+- 一个帅气的IDE
+- 一个 OMDB 的API key (你可以从 [这里](http://www.omdbapi.com/apikey.aspx) 自己生成一个或者直接使用我的)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+$ npm i
+$ yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 可能遇到的问题
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 如果yarn start报错not found module
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ npm cache clean --force
+$ rm -rf node_modules
+$ rm -rf package-lock.json
+$ npm install
+```
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 目录结构
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+├─.gitignore
+├─package.json
+├─README.md
+├─result.txt
+├─yarn.lock
+├─src
+|  ├─App.css
+|  ├─App.test.js
+|  ├─index.css
+|  ├─index.js
+|  ├─logo.svg
+|  ├─serviceWorker.js
+|  ├─components
+|  |     ├─App.js
+|  |     ├─Header.js
+|  |     ├─Movie.js
+|  |     └Search.js
+├─public
+|   ├─favicon.ico
+|   ├─index.html
+|   ├─logo192.png
+|   ├─logo512.png
+|   ├─manifest.json
+|   └robots.txt
 
-### Making a Progressive Web App
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
